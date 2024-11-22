@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>angelino</title>
+   
+        
+    <script>
+        let KapagHaboTalagangMagYes = 1;
+
+        function OpenNewPage() {
+            window.open("kilig.html");
+        }
+
+        function f() {
+            const noButton = document.getElementById('NoButton');
+            
+            if (KapagHaboTalagangMagYes == 1) {
+                noButton.style.top = '100px';
+                noButton.style.left = '300px';
+                KapagHaboTalagangMagYes = 2;
+                noButton.style.width = '100px'; 
+                noButton.style.height = '50px'; 
+            } else if (KapagHaboTalagangMagYes == 2) {
+                noButton.style.top = '400px';
+                noButton.style.left = '50px';
+                KapagHaboTalagangMagYes = 3;
+                noButton.style.width = '150px'; 
+                noButton.style.height = '75px'; 
+            } else if (KapagHaboTalagangMagYes == 3) {
+                noButton.style.top = '370px';
+                noButton.style.left = '166px';
+                KapagHaboTalagangMagYes = 1;
+                noButton.style.width = '200px'; 
+                noButton.style.height = '100px'; 
+            }
+        }
+    </script>
+
+<body>
+<h3>Date tayo</h1>
+
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWRreDE0bDdoMHYyanJ1cHhsNTNmbjZtZHZreTBzaXA0bnB4ZTBnaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qUIm5wu6LAAog/giphy.gif" height="200" />
+
+
+<div id="By" style="position:absolute; left:64px; top:370px; width:210px;
+height:210px;">
+<input type="button" value=" Sure " onClick="OpenNewPage()" />
+</div>
+
+<div ID="NoButton" style="position:absolute; left:166px; top:370px;  height:210px;">
+<input type="button" value=" Pass " onMouseOver="f()" />
+</div>
+
+
+</body>
+</html>
